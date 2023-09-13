@@ -5,71 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+
+    <!--NAV BAR-->
+
     <nav>
         <ul class="menu">
             <li class="logo"><a href="#">MBB Medicina</a></li>
             <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item button"><a href="#">Login</a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="item"><a href="#">Sobre nosotros</a></li>
+            <li class="item"><a href="#">Tratamientos</a></li>
+            <li class="item"><a href="#">Contacto</a></li>
             <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
+
+    <!--MAIN CONTENT-->
+
     <main>
         <div class="container">
-            <article>
-                <h2>Artículo 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quos ducimus maxime at autem incidunt
-                    aspernatur, corrupti culpa officiis, excepturi fuga magnam obcaecati rerum reprehenderit sapiente
-                    est repudiandae hic aut velit repellendus eius! Dicta perspiciatis quod, quae provident libero
-                    adipisci?</p>
-            </article>
-            <article>
-                <h2>Artículo 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolore? Temporibus odio quos quia
-                    libero, voluptatibus ratione nesciunt quae distinctio!</p>
-            </article>
+            <section class="about-us">
+                <h2>Sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus adipisci deserunt officiis
+                    eveniet quis, nihil, voluptatem fuga neque quibusdam ipsa! Deserunt nihil iusto quia provident dolor
+                    beatae, rem ratione, voluptates quasi obcaecati nemo totam.</p>
+            </section>
+            <section>
+                <div class="wrapper">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
+                        <img src="test.jpeg">
+                        <img src="test.jpeg">
+                        <img src="test.jpeg">
+                        <img src="test.jpeg">
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </section>
         </div>
     </main>
+
+    <!--FOOTER-->
+
     <footer class="footer">
         <div class="container-footer">
             <div class="row">
                 <div class="footer-col">
-                    <h4>company</h4>
+                    <h4>MBB MEDICINA</h4>
                     <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i>+54 9 223 XXX XXXX</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Guido 1947</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i>info@ejemplo.com</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>get help</h4>
+                    <h4>Ayuda</h4>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Tratamientos</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="#">watch</a></li>
-                        <li><a href="#">bag</a></li>
-                        <li><a href="#">shoes</a></li>
-                        <li><a href="#">dress</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
+                    <h4>Seguinos</h4>
                     <div class="social-links">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -83,6 +88,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="js/carousel.js" defer></script>
 
 </body>
 
