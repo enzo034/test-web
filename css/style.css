@@ -40,6 +40,7 @@
 .wrapper i:first-child
 {
     left: -23px;
+    display: none;
 }
 
 .wrapper i:last-child
@@ -53,13 +54,24 @@
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img
+{
+    pointer-events: none;
 }
 
 .carousel img
 {
     height: 340px;
     object-fit: cover;
-    margin-left: 14px;
     width: calc(100% / 3);
 }
 
