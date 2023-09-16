@@ -21,7 +21,7 @@ html{
 
 .header{
     padding: 1.5rem 7%;
-    background-color: var(--secclr);
+    background-color: var(--mainclr);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,6 +186,8 @@ html{
 
 .our-services{
     padding: 4rem 7%;
+    background: var(--secclr);
+    color: white;
 }
 
 .service-content{
@@ -273,10 +275,11 @@ html{
 
 .gallery{
     padding: 4rem 7%;
+    background: var(--secclr);
 }
 
 .gallery h2{
-    color: var(--mainclr);
+    color: white;
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
@@ -315,6 +318,7 @@ html{
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    background: var(--secclr);
 }
 
 .inner-choose{
@@ -322,12 +326,13 @@ html{
 }
 
 .inner-choose img{
-    width: 100%;
+    width: 80%;
+    margin-left: 30px;
 }
 
 .inner-choose h2{
     font-size: 40px;
-    color: var(--mainclr);
+    color: white;
 }
 
 .main-inner-choose{
@@ -355,11 +360,12 @@ html{
 .icon-content p{
     font-size: 1.5rem;
     line-height: 1;
+    color: white;
 }
 
 .footer{
     padding: 6rem 7%;
-    background: var(--secclr);
+    background: var(--mainclr);
 }
 
 .main-footer{
