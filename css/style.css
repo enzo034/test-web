@@ -21,7 +21,7 @@ html{
 
 .header{
     padding: 1.5rem 7%;
-    background-color: var(--mainclr);
+    background: linear-gradient(135deg, #0F1A20, #197278);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -365,7 +365,7 @@ html{
 
 .footer{
     padding: 6rem 7%;
-    background: var(--mainclr);
+    background: linear-gradient(135deg, #0F1A20, #197278);;
 }
 
 .main-footer{
