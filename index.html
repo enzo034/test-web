@@ -4,94 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Web</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Test</title>
 </head>
 
 <body>
 
-    <!--NAV BAR-->
+    <header class="header">
+        <img src="logo.png" id="logo" alt="">
 
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">MBB Medicina</a></li>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Sobre nosotros</a></li>
-            <li class="item"><a href="#">Tratamientos</a></li>
-            <li class="item"><a href="#">Contacto</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">contact</a>
+        </nav>
 
-    <!--MAIN CONTENT-->
-
-    <main>
-        <div class="container">
-            <section class="about-us">
-                <h2>Sobre nosotros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus adipisci deserunt officiis
-                    eveniet quis, nihil, voluptatem fuga neque quibusdam ipsa! Deserunt nihil iusto quia provident dolor
-                    beatae, rem ratione, voluptates quasi obcaecati nemo totam.</p>
-            </section>
-            <section>
-                <div class="wrapper">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <div class="carousel">
-                        <img src="test.jpeg" draggable="false">
-                        <img src="background.jpg" draggable="false">
-                        <img src="test.jpeg" draggable="false">
-                        <img src="background.jpg" draggable="false">
-                        <img src="test.jpeg" draggable="false">
-                        <img src="background.jpg" draggable="false">
-                    </div>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
-                </div>
-            </section>
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+            <a href="#">contact</a>
         </div>
-    </main>
 
-    <!--FOOTER-->
+    </header>
 
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>MBB MEDICINA</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-phone"></i>+54 9 223 XXX XXXX</a></li>
-                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Guido 1947</a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i>info@ejemplo.com</a></li>
-                    </ul>
+    <div class="background-image">
+        <div class="background-content">
+            <h1>Lorem ipsum <br>dolor sit amet.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime incidunt praesentium inventore ad
+                doloremque dignissimos quibusdam blanditiis aspernatur nisi.
+            </p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h2>about us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus iste aperiam, nihil
+                        adipisci quia, necessitatibus voluptate rem amet earum debitis possimus tenetur labore? Nam
+                        accusantium fugiat distinctio facere unde!
+                    </p>
+                    <a href="#">Read more</a>
                 </div>
-                <div class="footer-col">
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Tratamientos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="test2.jpg" alt="">
                 </div>
-                <div class="footer-col">
-                    <h4>Seguinos</h4>
-                    <div class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-services">
+        <div class="service-content">
+            <div class="left-service-content">
+                <h2>Our special services</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quibusdam id unde mollitia ipsa
+                    enim sunt ut officiis assumenda, soluta optio sapiente voluptatem omnis amet dignissimos nisi eaque
+                    dolorem deleniti.
+                </p>
+            </div>
+            <div class="right-service-content">
+                <div class="right-btn">
+                    <a href="#">See all services</a>
+                </div>
+            </div>
+
+            <div class="main-services">
+                <div class="inner-services-content">
+                    <div class="service-icon">
+                        <i class="fas fa-notes-medical"></i>
+                    </div>
+                    <h3>health care</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, nisi.</p>
+                </div>
+                <div class="inner-services-content">
+                    <div class="service-icon">
+                        <i class="fas fa-hospital-user"></i>
+                    </div>
+                    <h3>health care</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, nisi.</p>
+                </div>
+                <div class="inner-services-content">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>health care</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, nisi.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h2>Gallery</h2>
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <img src="gallery1.jpg">
+            </div>
+            <div class="inner-gallery">
+                <img src="gallery3.jpg">
+            </div>
+            <div class="inner-gallery">
+                <img src="gallery4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="why chooseus">
+        <div class="main-choose">
+            <div class="inner-choose">
+                <img src="choose.jpg">
+            </div>
+            <div class="inner-choose">
+                <h2>why choose us</h2>
+                <div class="inner-choose-content">
+                    <div class="main-inner-choose">
+                        <div class="choose-icon">
+                            <i class="fas fa-notes-medical"></i>
+                        </div>
+                        <div class="icon-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Ipsam impedit culpa eum earum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-inner-choose">
+                        <div class="choose-icon">
+                            <i class="fas fa-hospital-user"></i>
+                        </div>
+                        <div class="icon-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Ipsam impedit culpa eum earum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-inner-choose">
+                        <div class="choose-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="icon-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Ipsam impedit culpa eum earum.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="js/carousel.js" defer></script>
+    <div class="footer">
+        <div class="main-footer">
+            <div class="inner-footer">
+                <img src="logo.png">
+            </div>
+            <div class="inner-footer">
+                <h3>heading</h3>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+            <div class="inner-footer">
+                <h3>heading</h3>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+            <div class="inner-footer">
+                <h3>heading</h3>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+        </div>
 
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
