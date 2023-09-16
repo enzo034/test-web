@@ -1,10 +1,10 @@
-:root{
-    --mainclr:#197278;
-    --secclr:#0F1A20;
-    --trdclr:#B5FFE9;
+:root {
+    --mainclr: #197278;
+    --secclr: #0F1A20;
+    --trdclr: #B5FFE9;
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -15,13 +15,13 @@
     text-decoration: none;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.header{
+.header {
     padding: 1.5rem 7%;
-    background: linear-gradient(135deg, #0F1A20, #197278);
+    background-color: var(--mainclr);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,18 +31,18 @@ html{
     z-index: 1;
 }
 
-.header #logo{
+.header #logo {
     width: 80px;
 }
 
-.navbar a{
+.navbar a {
     color: white;
     font-size: 1.5rem;
     margin-left: 2rem;
     position: relative;
 }
 
-.navbar a::after{
+.navbar a::after {
     content: '';
     background: var(--trdclr);
     width: 0;
@@ -54,7 +54,7 @@ html{
     transition: 0.3s;
 }
 
-.navbar a:hover::after{
+.navbar a:hover::after {
     content: '';
     background: var(--trdclr);
     width: 100%;
@@ -65,14 +65,14 @@ html{
     margin-top: 5px;
 }
 
-.icons div{
+.icons div {
     font-size: 2rem;
     margin-right: 1rem;
     color: white;
     display: none;
 }
 
-.icons a{
+.icons a {
     color: var(--trdclr);
     background-color: var(--mainclr);
     padding: 1rem 2.5rem;
@@ -80,12 +80,12 @@ html{
     border-radius: 10px;
 }
 
-.icons a:hover{
+.icons a:hover {
     background: transparent;
     border: 1px solid var(--mainclr);
 }
 
-.navbar.active{
+.navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -101,7 +101,7 @@ html{
     position: relative;
 }
 
-.background-content{
+.background-content {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -109,18 +109,18 @@ html{
     transform: translate(-80%);
 }
 
-.background-content h1{
+.background-content h1 {
     color: black;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.background-content p{
+.background-content p {
     font-size: 1.5rem;
     margin-bottom: 40px;
 }
 
-.background-content a{
+.background-content a {
     background: var(--mainclr);
     padding: 1.5rem 3rem;
     border-radius: 15px;
@@ -129,17 +129,17 @@ html{
     transition: 0.5s;
 }
 
-.background-content a:hover{
+.background-content a:hover {
     background: rgba(56, 148, 168, 0.527);
     border: 1px solid var(--mainclr);
 }
 
-.about{
-    padding: 4rem 7%;
+.about {
+    padding: 8rem 7%;
     background: var(--secclr);
 }
 
-.main-about{
+.main-about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,30 +147,30 @@ html{
     flex-wrap: wrap;
 }
 
-.inner-about{
+.inner-about {
     flex: 1 1 45rem;
 }
 
-.inner-about .inner-about-image img{
+.inner-about .inner-about-image img {
     width: 100%;
 }
 
-.about-content{
+.about-content {
     color: rgb(234, 243, 245);
     width: 80%;
 }
 
-.about-content h2{
+.about-content h2 {
     font-size: 40px;
     margin-bottom: 15px;
 }
 
-.about-content p{
+.about-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-.about-content a{
+.about-content a {
     background: var(--mainclr);
     padding: 1rem 3rem;
     font-size: 1.5rem;
@@ -179,18 +179,20 @@ html{
     transition: 0.5s;
 }
 
-.about-content a:hover{
+.about-content a:hover {
     background: rgba(56, 148, 168, 0.527);
     border: 1px solid var(--mainclr);
 }
 
-.our-services{
-    padding: 4rem 7%;
+/* OUR SERVICES */
+
+.our-services {
+    padding: 8rem 7%;
     background: var(--secclr);
     color: white;
 }
 
-.service-content{
+.service-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,26 +200,26 @@ html{
     gap: 50px;
 }
 
-.left-service-content{
+.left-service-content {
     flex: 1 1 45rem;
 }
 
-.right-service-content{
+.right-service-content {
     flex: 1 1 45rem;
     display: flex;
     justify-content: flex-end;
 }
 
-.left-service-content h2{
+.left-service-content h2 {
     font-size: 40px;
     margin-bottom: 15px;
 }
 
-.left-service-content p{
+.left-service-content p {
     font-size: 1.5rem;
 }
 
-.right-service-content .right-btn a{
+.right-service-content .right-btn a {
     background: var(--mainclr);
     padding: 1.5rem 3rem;
     font-size: 1.5rem;
@@ -226,12 +228,12 @@ html{
     transition: 0.5s;
 }
 
-.right-service-content .right-btn a:hover{
+.right-service-content .right-btn a:hover {
     background: rgba(56, 148, 168, 0.527);
     border: 1px solid var(--mainclr);
 }
 
-.main-services{
+.main-services {
     padding: 6rem 0;
     display: flex;
     justify-content: center;
@@ -240,22 +242,22 @@ html{
     gap: 15px;
 }
 
-.inner-services-content{
+.inner-services-content {
     flex: 1 1 300px;
     padding: 2rem 1rem;
     text-align: center;
 }
 
-.inner-services-content h3{
+.inner-services-content h3 {
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.inner-services-content p{
+.inner-services-content p {
     font-size: 1.5rem;
 }
 
-.service-icon i{
+.service-icon i {
     font-size: 4rem;
     width: 8rem;
     height: 8rem;
@@ -268,24 +270,27 @@ html{
 }
 
 
-.service-icon i:hover{
+.service-icon i:hover {
     color: white;
     background: var(--secclr);
 }
 
-.gallery{
-    padding: 4rem 7%;
+
+/* GALLERY */
+
+.gallery {
+    padding: 8rem 7%;
     background: var(--secclr);
 }
 
-.gallery h2{
+.gallery h2 {
     color: white;
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.main-gallery{
+.main-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,56 +298,57 @@ html{
     flex-wrap: wrap;
 }
 
-.inner-gallery{
+.inner-gallery {
     flex: 1 1 300px;
 
 }
 
-.inner-gallery img{
+.inner-gallery img {
     width: 100%;
     transition: .3s;
 }
 
-.inner-gallery img:hover{
+.inner-gallery img:hover {
     transform: scale(1.1);
     border-radius: 20px;
 }
 
-.why-chooseus{
-    padding: 4rem 7%;
+.why-chooseus {
+    padding: 8rem 7%;
+    background: var(--secclr);
 }
 
-.main-choose{
+.main-choose {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    background: var(--secclr);
+    
 }
 
-.inner-choose{
+.inner-choose {
     flex: 1 1 45rem;
 }
 
-.inner-choose img{
+.inner-choose img {
     width: 80%;
     margin-left: 30px;
 }
 
-.inner-choose h2{
+.inner-choose h2 {
     font-size: 40px;
     color: white;
 }
 
-.main-inner-choose{
+.main-inner-choose {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
 }
 
-.choose-icon{
+.choose-icon {
     width: 5rem;
     height: 5rem;
     line-height: 5rem;
@@ -353,22 +359,22 @@ html{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.icon-content{
+.icon-content {
     padding: 0 4rem;
 }
 
-.icon-content p{
+.icon-content p {
     font-size: 1.5rem;
     line-height: 1;
     color: white;
 }
 
-.footer{
+.footer {
     padding: 6rem 7%;
-    background: linear-gradient(135deg, #0F1A20, #197278);;
+    background: var(--mainclr);
 }
 
-.main-footer{
+.main-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,20 +382,20 @@ html{
     flex-wrap: wrap;
 }
 
-.inner-footer{
+.inner-footer {
     flex: 1 1 200px;
 }
 
-.inner-footer img{
+.inner-footer img {
     width: 90px;
 }
 
-.inner-footer h3{
+.inner-footer h3 {
     font-size: 2rem;
     color: white;
 }
 
-.inner-footer a{
+.inner-footer a {
     color: white;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -399,7 +405,7 @@ html{
     position: relative;
 }
 
-.inner-footer a::after{
+.inner-footer a::after {
     content: '';
     background: var(--trdclr);
     width: 0;
@@ -411,7 +417,7 @@ html{
     transition: 0.3s;
 }
 
-.inner-footer a:hover::after{
+.inner-footer a:hover::after {
     content: '';
     background: var(--trdclr);
     width: 10rem;
@@ -424,18 +430,21 @@ html{
 
 
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 
-    html{
+    html {
         font-size: 55%;
     }
-    .header{
+
+    .header {
         padding: 2rem;
     }
-    .icons div{
+
+    .icons div {
         display: initial;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -448,7 +457,7 @@ html{
         clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     }
 
-    .navbar a{
+    .navbar a {
         display: block;
         font-size: 3rem;
         font-weight: bolder;
@@ -457,7 +466,7 @@ html{
         color: black;
     }
 
-    .background-content{
+    .background-content {
         width: 100%;
         left: 50%;
         top: 50%;
@@ -465,7 +474,7 @@ html{
         padding-left: 5rem;
     }
 
-    .inner-about .inner-about-image img{
+    .inner-about .inner-about-image img {
         margin-top: 20px;
     }
 }
