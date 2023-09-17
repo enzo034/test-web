@@ -29,7 +29,7 @@ footer {
     font-size: 1.5rem;
     font-weight: bolder;
     margin-top: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     display: block;
     position: relative;
 }
@@ -55,4 +55,28 @@ footer {
     top: 100%;
     left: 0;
     margin-top: 5px;
+}
+
+.copy{
+    text-align: center;
+    margin-top: 4rem;
+    border-top: 1px solid var(--trdclr);
+    padding: 4rem;
+    font-size: 16px;
+    color: white;
+}
+
+.inner-footer .icons-media a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--secclr);
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.inner-footer .icons-media a:hover {
+    color: #25262b;
+    background-color: #ffffff;
 }
