@@ -57,11 +57,6 @@
     width: calc(100% / 3);
 }
 
-.carousel img:first-child
-{
-    margin-left: 0px;
-}
-
 @media screen and (max-width: 900px){
     .carousel img
     {

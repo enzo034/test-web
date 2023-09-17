@@ -93,21 +93,6 @@
         </div>
     </section>
 
-    <div class="gallery">
-        <h2>galeria</h2>
-        <div class="main-gallery">
-            <div class="inner-gallery">
-                <img src="gallery1.jpg" alt="Foto de galeria 1">
-            </div>
-            <div class="inner-gallery">
-                <img src="gallery3.jpg" alt="Foto de galeria 2">
-            </div>
-            <div class="inner-gallery">
-                <img src="gallery4.jpg" alt="Foto de galeria 3">
-            </div>
-        </div>
-    </div>
-
     <div class="why-chooseus">
         <div class="main-choose">
             <div class="inner-choose">
@@ -151,6 +136,19 @@
         </div>
     </div>
 
+    <div class="gallery">
+        <div class="full-img" id="fullImgBox">
+            <img src="img/img1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="img-gallery" id="imgGallery">
+            <img src="gallery4.jpg" onclick="openFullImg(this.src)">
+            <img src="gallery3.jpg" onclick="openFullImg(this.src)">
+            <img src="gallery1.jpg" onclick="openFullImg(this.src)">
+            <img src="gallery4.jpg" onclick="openFullImg(this.src)">
+        </div>
+    </div>
+
     <footer>
         <div class="main-footer">
             <div class="inner-footer">
@@ -178,6 +176,7 @@
         <p class="copy">&#169; Todos los derechos reservados MBB Medicina</p>
     </footer>
 
+    <script src="js/gallery.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/script.js"></script>
 </body>
