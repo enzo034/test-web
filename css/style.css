@@ -5,6 +5,7 @@
 @import url(our-services.css);
 @import url(gallery.css);
 @import url(choose.us.css);
+@import url(carousel.css);
 
 :root {
     --mainclr: #197278;
