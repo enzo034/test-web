@@ -1,95 +1,80 @@
+@import url(footer.css);
+@import url(header.css);
+@import url(fBackground.css);
+@import url(about-us.css);
+@import url(our-services.css);
+@import url(gallery.css);
+@import url(choose.us.css);
+@import url(carousel.css);
+
+:root {
+    --mainclr: #086788;
+    --secclr: #0F1A20;
+    --trdclr: #B5FFE9;
+}
+
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    outline: none;
     box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
-.container {
-    margin: 20px auto;
-    padding: 0 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+html {
+    font-size: 62.5%;
 }
 
-/* carousel */
 
-.wrapper
-{
-    max-width: 1200px;
-    position: relative;
-}
 
-.wrapper i
-{
-    top: 35%;
-    height: 46px;
-    width: 46px;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 46px;
-    background: #B5FFE9;
-    cursor: pointer;
-    border-radius: 50%;
-    position: absolute;
-    transform: translateY(50%);
-}
+@media (max-width: 767px) {
 
-.wrapper i:first-child
-{
-    left: -23px;
-    display: none;
-}
-
-.wrapper i:last-child
-{
-    right: -23px;
-}
-
-.wrapper .carousel
-{
-    font-size: 0px;
-    cursor: pointer;
-    white-space: nowrap;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-
-.carousel.dragging
-{
-    cursor: grab;
-    scroll-behavior: auto;
-}
-
-.carousel.dragging img
-{
-    pointer-events: none;
-}
-
-.carousel img
-{
-    height: 340px;
-    object-fit: cover;
-    width: calc(100% / 3);
-}
-
-.carousel img:first-child
-{
-    margin-left: 0px;
-}
-
-@media screen and (max-width: 900px){
-    .carousel img
-    {
-        width: calc(100% / 2);
+    html {
+        font-size: 55%;
     }
-}
 
-@media screen and (max-width: 574px){
-    .carousel img
-    {
+    .header {
+        padding: 2rem;
+    }
+
+    .icons div {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
+        height: 100vh;
+        background: var(--mainclr);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1rem;
+        padding: 1rem;
+        color: black;
+    }
+
+    .background-content {
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 5rem;
+    }
+
+    .inner-about .inner-about-image img {
+        margin-top: 20px;
     }
 }

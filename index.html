@@ -4,94 +4,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Web</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Test</title>
 </head>
 
 <body>
 
-    <!--NAV BAR-->
+    <header class="header">
+        <img src="logo.png" id="logo" alt="MBB medicina logo">
 
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">MBB Medicina</a></li>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Sobre nosotros</a></li>
-            <li class="item"><a href="#">Tratamientos</a></li>
-            <li class="item"><a href="#">Contacto</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#">sobre nosotros</a>
+            <a href="#">tratamientos</a>
+            <a href="#">galeria</a>
+            <a href="#">contacto</a>
+        </nav>
 
-    <!--MAIN CONTENT-->
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+            <a href="#">contacto</a>
+        </div>
 
-    <main>
-        <div class="container">
-            <section class="about-us">
-                <h2>Sobre nosotros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus adipisci deserunt officiis
-                    eveniet quis, nihil, voluptatem fuga neque quibusdam ipsa! Deserunt nihil iusto quia provident dolor
-                    beatae, rem ratione, voluptates quasi obcaecati nemo totam.</p>
-            </section>
-            <section>
+    </header>
+
+    <section class="background-image">
+        <div class="background-content">
+            <h1>Lorem ipsum <br>dolor sit amet.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime incidunt praesentium inventore ad
+                doloremque dignissimos quibusdam blanditiis aspernatur nisi.
+            </p>
+            <a href="#">Saber más</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h2>sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus iste aperiam, nihil
+                        adipisci quia, necessitatibus voluptate rem amet earum debitis possimus tenetur labore? Nam
+                        accusantium fugiat distinctio facere unde!
+                    </p>
+                    <a href="#">Saber más</a>
+                </div>
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="test2.jpg" alt="Imagen sobre nosotros">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services">
+        <div class="service-content">
+            <div class="left-service-content">
+                <h2>Algunos de nuestros tratamientos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quibusdam id unde mollitia ipsa
+                    enim sunt ut officiis assumenda, soluta optio sapiente voluptatem omnis amet dignissimos nisi eaque
+                    dolorem deleniti.
+                </p>
+            </div>
+            <div class="right-service-content">
+                <div class="right-btn">
+                    <a href="#">Ver todos los tratamientos</a>
+                </div>
+            </div>
+
+            <div>
                 <div class="wrapper">
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <div class="carousel">
-                        <img src="test.jpeg" draggable="false">
-                        <img src="background.jpg" draggable="false">
-                        <img src="test.jpeg" draggable="false">
-                        <img src="background.jpg" draggable="false">
-                        <img src="test.jpeg" draggable="false">
-                        <img src="background.jpg" draggable="false">
+                        <img src="gallery1.jpg" draggable="false" alt="tratamiento 1">
+                        <img src="gallery4.jpg" draggable="false" alt="tratamiento 2">
+                        <img src="gallery3.jpg" draggable="false" alt="tratamiento 3">
+                        <img src="gallery4.jpg" draggable="false" alt="tratamiento 4">
+                        <img src="gallery1.jpg" draggable="false" alt="tratamiento 5">
+                        <img src="gallery3.jpg" draggable="false" alt="tratamiento 6">
                     </div>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
-            </section>
+            </div>
+
         </div>
-    </main>
+    </section>
 
-    <!--FOOTER-->
-
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>MBB MEDICINA</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-phone"></i>+54 9 223 XXX XXXX</a></li>
-                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Guido 1947</a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i>info@ejemplo.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Tratamientos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Seguinos</h4>
-                    <div class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    <div class="why-chooseus">
+        <div class="main-choose">
+            <div class="inner-choose">
+                <img src="choose.jpg" alt="Foto sobre nosotros">
+            </div>
+            <div class="inner-choose">
+                <h2>por qué elegirnos</h2>
+                <div class="inner-choose-content">
+                    <div class="main-inner-choose">
+                        <div class="choose-icon">
+                            <i class="fas fa-notes-medical"></i>
+                        </div>
+                        <div class="icon-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Ipsam impedit culpa eum earum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-inner-choose">
+                        <div class="choose-icon">
+                            <i class="fas fa-hospital-user"></i>
+                        </div>
+                        <div class="icon-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Ipsam impedit culpa eum earum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-inner-choose">
+                        <div class="choose-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="icon-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Ipsam impedit culpa eum earum.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="gallery">
+        <div class="full-img" id="fullImgBox">
+            <img src="" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="img-gallery" id="imgGallery">
+            <img src="gallery4.jpg" onclick="openFullImg(this.src)">
+            <img src="gallery3.jpg" onclick="openFullImg(this.src)">
+            <img src="gallery1.jpg" onclick="openFullImg(this.src)">
+            <img src="gallery4.jpg" onclick="openFullImg(this.src)">
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-footer">
+            <div class="inner-footer">
+                <img src="logo.png" alt="MBB medicina logo">
+            </div>
+            <div class="inner-footer">
+                <h3>Contactanos</h3>
+                <a href="#">Guido XXXX</a>
+                <a href="#">223 XXX XXXX</a>
+                <a href="#">mbbmedicina@ejemplo.com</a>
+            </div>
+            <div class="inner-footer">
+                <h3>Redes</h3>
+                <div class="icons-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="icons-media">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="icons-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copy">&#169; Todos los derechos reservados MBB Medicina</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="js/carousel.js" defer></script>
-
+    <script src="js/gallery.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

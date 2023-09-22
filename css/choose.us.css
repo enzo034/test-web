@@ -1,0 +1,57 @@
+.why-chooseus {
+    padding: 8rem 7%;
+    background: var(--secclr);
+}
+
+.main-choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.inner-choose {
+    flex: 1 1 45rem;
+}
+
+.inner-choose img {
+    width: 80%;
+    margin-left: 30px;
+}
+
+.inner-choose h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.main-inner-choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.choose-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    line-height: 5rem;
+    background: white;
+    color: var(--mainclr);
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.icon-content {
+    padding: 0 4rem;
+}
+
+.icon-content p {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: white;
+}
