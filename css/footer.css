@@ -21,11 +21,12 @@ footer {
 
 .inner-footer h3 {
     font-size: 2rem;
-    color: white;
+    color: rgb(239, 243, 243);
+    border-bottom: 2px solid var(--secclr);
 }
 
 .inner-footer a, .inner-footer i{
-    color: white;
+    color: rgb(235, 235, 235);
 }
 
 .inner-footer .icons-contact {
@@ -66,7 +67,7 @@ footer {
 }
 
 .inner-footer .icons-media a {
-    display: inline-block;
+    display: block;
     height: 3rem;
     width: 3rem;
     text-align: center;
