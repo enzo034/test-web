@@ -37,6 +37,31 @@ html {
     width: 85%;
     margin: 20px auto;
 }
+.blog-section .section-content .search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    
+}
+.blog-section .section-content .search-container .search-box{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
 .blog-section .section-content .title{
     width: 60%;
     text-align: center;
