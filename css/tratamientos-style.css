@@ -54,7 +54,9 @@ html {
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
-
+#h1-nuestros{
+    margin-top: 20px;
+}
 .blog-section .section-content .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -66,6 +68,10 @@ html {
     background-color: var(--trdclr);
     position: relative;
     border-radius: 16px;
+}
+.blog-section .section-content .cards .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 .blog-section .section-content .cards .card img{
     width: 100%;
@@ -88,10 +94,15 @@ html {
     text-decoration: none;
     display: inline-block;
     background-color: var(--mainclr);
-    padding: 8px 1px;
+    padding: 8px 8px;
     margin-left: 20px;
     color: #B5FFE9;
     margin-bottom: 20px;
+    border-radius: 4px;
+}
+.blog-section .section-content .cards .card a:hover{
+
+    background-color: var(--secclr);
 }
 .blog-section .section-content .cards .card .posted-date p{
     font-weight: 600;
