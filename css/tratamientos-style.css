@@ -160,11 +160,17 @@ html {
     .blog-section .section-content .cards{
         grid-template-columns: repeat(2,1fr);
     }
+    .background-content h1 {
+        font-size: 5rem;
+    }
 }
 
 @media screen and (max-width:768px){
     .blog-section .section-content .cards{
         grid-template-columns: 1fr;
+    }
+    .background-content h1 {
+        font-size: 4rem;
     }
 }
 
