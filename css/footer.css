@@ -6,7 +6,7 @@ footer {
 .main-footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -21,40 +21,40 @@ footer {
 
 .inner-footer h3 {
     font-size: 2rem;
-    color: white;
+    color: rgb(239, 243, 243);
+    border-bottom: 2px solid var(--secclr);
 }
 
-.inner-footer a {
+.inner-footer a, .inner-footer i{
+    color: rgb(235, 235, 235);
+}
+
+.inner-footer .icons-contact {
     color: white;
     font-size: 1.5rem;
     font-weight: bolder;
     margin-top: 1rem;
     padding-top: 0.8rem;
-    display: block;
     position: relative;
 }
 
-.inner-footer a::after {
-    content: '';
-    background: var(--trdclr);
-    width: 0;
-    height: 3px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 5px;
-    transition: 0.3s;
+.inner-footer .icons-media {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
 }
 
-.inner-footer a:hover::after {
-    content: '';
-    background: var(--trdclr);
-    width: 10rem;
-    height: 3px;
+.inner-footer .icons-media i{
     position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 5px;
+    top: 40%;
+    left: 2.2%
+}
+
+.inner-footer .icons-contact:hover {
+    padding-left: 0.5rem;
 }
 
 .copy{
@@ -67,16 +67,10 @@ footer {
 }
 
 .inner-footer .icons-media a {
-    display: inline-block;
+    display: block;
     height: 3rem;
     width: 3rem;
-    background-color: var(--secclr);
     text-align: center;
     border-radius: 50%;
     color: #ffffff;
-}
-
-.inner-footer .icons-media a:hover {
-    color: #25262b;
-    background-color: #ffffff;
 }

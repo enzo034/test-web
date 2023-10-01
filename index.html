@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,12 @@
 <body>
 
     <header class="header">
-        <img src="logo.png" id="logo" alt="MBB medicina logo">
+        <img src="img/logo.png" id="logo" alt="MBB medicina logo">
 
         <nav class="navbar">
-            <a href="#">home</a>
-            <a href="#">sobre nosotros</a>
-            <a href="#">tratamientos</a>
+            <a href="index.html">home</a>
+            <a href="about-us.html">sobre nosotros</a>
+            <a href="tratamientos.html">tratamientos</a>
             <a href="#">galeria</a>
             <a href="#">contacto</a>
         </nav>
@@ -49,12 +49,12 @@
                         adipisci quia, necessitatibus voluptate rem amet earum debitis possimus tenetur labore? Nam
                         accusantium fugiat distinctio facere unde!
                     </p>
-                    <a href="#">Saber más</a>
+                    <a href="about-us.html">Saber más</a>
                 </div>
             </div>
             <div class="inner-about">
                 <div class="inner-about-image">
-                    <img src="test2.jpg" alt="Imagen sobre nosotros">
+                    <img src="img/test2.jpg" alt="Imagen sobre nosotros">
                 </div>
             </div>
         </div>
@@ -79,12 +79,12 @@
                 <div class="wrapper">
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <div class="carousel">
-                        <img src="gallery1.jpg" draggable="false" alt="tratamiento 1">
-                        <img src="gallery4.jpg" draggable="false" alt="tratamiento 2">
-                        <img src="gallery3.jpg" draggable="false" alt="tratamiento 3">
-                        <img src="gallery4.jpg" draggable="false" alt="tratamiento 4">
-                        <img src="gallery1.jpg" draggable="false" alt="tratamiento 5">
-                        <img src="gallery3.jpg" draggable="false" alt="tratamiento 6">
+                        <img src="img/gallery1.jpg" draggable="false" alt="tratamiento 1">
+                        <img src="img/gallery4.jpg" draggable="false" alt="tratamiento 2">
+                        <img src="img/gallery3.jpg" draggable="false" alt="tratamiento 3">
+                        <img src="img/gallery4.jpg" draggable="false" alt="tratamiento 4">
+                        <img src="img/gallery1.jpg" draggable="false" alt="tratamiento 5">
+                        <img src="img/gallery3.jpg" draggable="false" alt="tratamiento 6">
                     </div>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
@@ -96,7 +96,7 @@
     <div class="why-chooseus">
         <div class="main-choose">
             <div class="inner-choose">
-                <img src="choose.jpg" alt="Foto sobre nosotros">
+                <img src="img/choose.jpg" alt="Foto sobre nosotros">
             </div>
             <div class="inner-choose">
                 <h2>por qué elegirnos</h2>
@@ -142,23 +142,32 @@
             <span onclick="closeFullImg()">X</span>
         </div>
         <div class="img-gallery" id="imgGallery">
-            <img src="gallery4.jpg" onclick="openFullImg(this.src)">
-            <img src="gallery3.jpg" onclick="openFullImg(this.src)">
-            <img src="gallery1.jpg" onclick="openFullImg(this.src)">
-            <img src="gallery4.jpg" onclick="openFullImg(this.src)">
+            <img src="img/gallery4.jpg" onclick="openFullImg(this.src)">
+            <img src="img/gallery3.jpg" onclick="openFullImg(this.src)">
+            <img src="img/gallery1.jpg" onclick="openFullImg(this.src)">
+            <img src="img/gallery4.jpg" onclick="openFullImg(this.src)">
         </div>
     </div>
 
     <footer>
         <div class="main-footer">
             <div class="inner-footer">
-                <img src="logo.png" alt="MBB medicina logo">
+                <img src="img/logo.png" alt="MBB medicina logo">
             </div>
             <div class="inner-footer">
                 <h3>Contactanos</h3>
-                <a href="#">Guido XXXX</a>
-                <a href="#">223 XXX XXXX</a>
-                <a href="#">mbbmedicina@ejemplo.com</a>
+                <div class="icons-contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="#">Guido XXXX</a>
+                </div>
+                <div class="icons-contact">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="#">223 XXX XXXX</a>
+                </div>
+                <div class="icons-contact">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="#">mbbmedicina@ejemplo.com</a>
+                </div>
             </div>
             <div class="inner-footer">
                 <h3>Redes</h3>
